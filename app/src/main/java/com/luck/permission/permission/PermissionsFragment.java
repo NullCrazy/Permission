@@ -25,7 +25,6 @@ public class PermissionsFragment extends Fragment {
 
     @TargetApi(Build.VERSION_CODES.M)
     void requestPermissions(@NonNull String[] permissions) {
-        getActivity().requestPermissions(permissions, PERMISSIONS_REQUEST_CODE);
         if (checkPermissions(getActivity(), permissions)) {
             if (mOnPermissionListener != null) {
                 mOnPermissionListener.onPermissionGranted();

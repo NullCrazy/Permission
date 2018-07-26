@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_group).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* testGroupPermission();*/
+                testGroupPermission();
             }
         });
     }
@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         Log.d("MainActivity", "获得了相机权限");
     }
 
-    /*@Permission({Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CALL_PHONE})
+    @Permission({Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CALL_PHONE})
     private void testGroupPermission() {
         Log.d("MainActivity", "获得了组合权限");
-    }*/
+    }
 }

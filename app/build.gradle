@@ -3,6 +3,7 @@ apply plugin: 'android-aspectjx'
 
 android {
     compileSdkVersion 28
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.luck.permission"
         minSdkVersion 15
@@ -19,8 +20,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
-    implementation 'org.aspectj:aspectjrt:1.8.9'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:28.0.0-alpha3'
+    compile 'org.aspectj:aspectjrt:1.8.9'
 }
